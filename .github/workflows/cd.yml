@@ -55,36 +55,7 @@ jobs:
       with:
         host: 43.200.132.231
         username: pkl0912
-        key: |
-          -----BEGIN OPENSSH PRIVATE KEY-----
-          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
-          -----END OPENSSH PRIVATE KEY-----
+        key: ${{ secrets.RELEASE_SERVER_KEY }}
         script: |
           docker rm -f cicdtest
           docker image pull kyounglin/cicdtest
