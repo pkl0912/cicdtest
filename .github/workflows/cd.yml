@@ -55,7 +55,7 @@ jobs:
       with:
         host: 43.200.132.231
         username: pkl0912
-        key: ${{ secrets.RELEASE_SERVER_KEY }}
+        key: ${{ secrets.RELEASE_SECRET_KEY }}
         script: |
           docker rm -f cicdtest
           docker image pull kyounglin/cicdtest
