@@ -54,7 +54,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: 43.200.132.231
-        username: pkl0912
+        username: ubuntu
         key: ${{ secrets.KEY }}
         script: |
           docker rm -f cicdtest
