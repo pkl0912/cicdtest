@@ -57,6 +57,5 @@ jobs:
         username: ubuntu
         key: ${{ secrets.KEY }}
         script: |
-          docker rm -f cicdtest
-          docker image pull kyounglin/cicdtest
-          docker run -d --name cicdtest-8080 -p 8080:8080 kyounglin/cicdtest
+            cd ~
+            ./deploy.sh
