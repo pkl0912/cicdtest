@@ -53,7 +53,7 @@ jobs:
     - name: 도커 컨테이너 실행
       uses: appleboy/ssh-action@master
       with:
-        host: 43.200.132.231
+        host: 13.125.208.227
         username: ubuntu
         key: ${{ secrets.KEY }}
         script: |
