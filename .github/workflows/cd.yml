@@ -43,8 +43,8 @@ jobs:
 
     - name: docker image 빌드 및 푸시
       run: |
-        docker build --platform linux/amd64 -t kyounglin/cicdtest .
-        docker push kyounglin/cicdtest
+        docker build --platform linux/amd64 -t kyounglin/testcicd .
+        docker push kyounglin/testcicd
 
   deploy-cd:      
     needs: deploy-ci
